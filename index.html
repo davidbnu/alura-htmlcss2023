@@ -4,11 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Alura - Curso HTML e CSS</title>
     </head>
     <body>
-        <header></header>
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu-link" href="index.html">Home</a>
+                <a class="cabecalho__menu-link" href="about.html">Sobre mim</a>
+            </nav>
+        </header>
         <main class="principal">
             <section class="principal__conteudo">
                 <h1 class="principal__conteudo-titulo">Eleve seu negócio digital a outro nível <strong class="titulo__destaque">com um Front-end de qualidade!</strong></h1>
@@ -33,7 +38,7 @@
                     </a>
                 </div>
             </section>
-            <img src="img/foto_joana.png" alt="Foto Joana Santos programando.">
+            <img class="principal__imagem" src="img/foto_joana.png" alt="Foto Joana Santos programando.">
         </main>
         <footer class="rodape">
             <p>Desenvolvido por Alura.</p>
