@@ -39,7 +39,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-between; 
-    margin: 5% 15%;
+    padding: 5% 15%;
     gap: 82px;
 }
 
@@ -59,7 +59,7 @@ body {
     font-size: 1.5rem; /*24px*/
     font-family: var(--fonte-secundaria);
     padding-right: 24px; 
-    text-align: justify;
+    text-align: center;
 }
 
 .titulo__destaque {
@@ -111,5 +111,32 @@ body {
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     padding: 24px 0;
-    text-align: center;    
+    text-align: justify;    
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu { 
+        display: flex;
+        justify-content: center;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .principal__conteudo-titulo, .rodape {
+        text-align: center;
+    }
+
+    .principal__conteudo, .principal__links-botao, .principal__imagem  {
+        width: 90%;
+    }
+    
+
+    
 }
